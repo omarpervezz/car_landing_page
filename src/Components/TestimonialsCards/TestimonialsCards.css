@@ -1,0 +1,22 @@
+.notch-outside::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Push the notch outside the bottom */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px; /* Width of the notch */
+    height: 20px; /* Height of the notch */
+    background-color: white; /* Match the card's background color */
+  }
+
+  
+  .notch-outside::before {
+    @apply absolute bg-white;
+    content: "";
+    bottom: -10px; /* Adjust this to control how far outside the notch appears */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px; /* Adjust the width */
+    height: 20px; /* Adjust the height */
+  }
+  
